@@ -1,5 +1,5 @@
 import React from 'react'
-import MovingComponent from 'react-moving-text'
+import AnimationComponent from 'react-css-animations'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faRedo, faCode } from '@fortawesome/free-solid-svg-icons'
 import styled from 'styled-components'
@@ -13,7 +13,7 @@ import CheckboxButton from '../atoms/checkboxButton'
 import SelectPanel from '../atoms/selectPanel'
 import { TimingFunctionItems, DirectionItems, FillModeItems, AnimationTypes } from './static'
 
-const Text = "React-Moving-Text"
+const Text = "React-CSS-Animations"
 const Letters = Text.split("")
 const AnimationOptions = {
   duration: "",
@@ -140,7 +140,7 @@ const Playground = () => {
         <ResultField>
           {
             animationObject === "object" &&
-              <MovingComponent
+              <AnimationComponent
                 key={counter}
                 type={animationType}
                 duration={`${duration}ms`}
@@ -150,7 +150,7 @@ const Playground = () => {
                 iteration={iterationCount}
                 fillMode={fillMode}
               >{Text}
-              </MovingComponent>
+              </AnimationComponent>
           }
 
           {
@@ -158,7 +158,7 @@ const Playground = () => {
             <LettersContainer key={counter}>
                 {
                   Letters.map((item, index) =>
-                  <MovingComponent
+                  <AnimationComponent
                     type={animationType}
                     duration={`${duration}ms`}
                     delay={`${index * interval}ms`}
@@ -168,14 +168,14 @@ const Playground = () => {
                     fillMode={fillMode}
                     key={index}>
                     {item}
-                  </MovingComponent>)
+                  </AnimationComponent>)
                 }
               </LettersContainer>
           }
 
           {
             animationObject === "multiline" &&
-            <MovingComponent
+            <AnimationComponent
               type="typewriter"
               dataText={[
                 'Sushi',
