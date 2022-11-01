@@ -1,7 +1,7 @@
 import React from "react"
-import MovingComponent from './component'
+import AnimationComponent from './component'
 
 
-export { default as MovingComponent} from './component'
+export { default as AnimationComponent} from './component'
 
-export default MovingComponent
+export default AnimationComponent
