@@ -10,7 +10,7 @@
     "reveal"
   ],
   "homepage": "https://prismosoft.github.io/react-easy-animations/",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "prismosoft",
   "license": "ISC",
   "main": "build/index.tsx",
