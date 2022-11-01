@@ -12,10 +12,10 @@ const Footer = () => {
         iteration="infinite"
         duration="2000ms"
         timing="linear"
-        style={{margin: "0px 10px", color:"orange"}}>
+        style={{margin: "0px 10px", color:"white"}}>
         ❤
       </Animation>
-       by <ExternalLink href="https://prismosoft.com" target="_blank" margin="0px 10px" color="#2196f3" >PrismoSoft</ExternalLink> using React and styled-components
+       by <ExternalLink href="https://prismosoft.com" target="_blank" margin="0px 10px" color="#ffffff" >PrismoSoft</ExternalLink> using React and styled-components
     </FooterContainer>
   )
 }
@@ -29,7 +29,7 @@ const FooterContainer = styled.div`
   width: 100vw;
   height: 40px;
   font-size: .8rem;
-  color: ${props => props.theme.colors.middle};
+  color: ${props => props.theme.colors.white};
   background-color: ${props => props.theme.colors.secondary};
 `
 

@@ -57,12 +57,12 @@ const StyledSelect = styled.select`
   display: inline-block;
   position: relative;
   width: 100%;
-  height: ${props => props.height ? props.height : '35px'};
   background-color: ${props => props.theme.colors.middle};
   color: ${props => props.theme.colors.lightgray};
   outline: none;
   border: none;
-  border-radius: 0;
+  border-radius: 5px;
+  padding: 10px;
   font-size: ${props => props.fontSize ? props.fontSize : "1rem"};
   box-shadow: 1px 1px 2px 0 rgba(0,0,0,.1);
 `

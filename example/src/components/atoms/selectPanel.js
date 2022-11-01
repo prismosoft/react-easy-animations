@@ -17,7 +17,7 @@ const SelectPanel = ({ items, onSelectItem }) => {
   }
 
   const [allItemsWithCheckState, setAllItemsWithCheckState] = React.useState(convertToArrayWithChecked(items))
-  const [setSelectedItems] = React.useState([])
+  const [selectedItems, setSelectedItems] = React.useState([])
 
   const handleChangeCheckState = (itemValue, allItems) => {
     const checkedItems = []
@@ -82,6 +82,10 @@ const ItemsContainer = styled.div`
   display: inline-flex;
   flex-wrap: wrap;
   justify-content: flex-start;
+  
+  label{
+    background: #e8e5f1;
+  }
 `
 
 export default SelectPanel

@@ -17,15 +17,15 @@ const Header = () => {
         />
       </ForkRibbon>
       <StyledH1>
-        <StyledLink color="#1976d2" noTransition={true} to="/react-easy-animations/">
+        <StyledLink color="#ffffff" noTransition={true} to="/react-easy-animations/">
           React-Easy-Animations
         </StyledLink>
       </StyledH1>
       <StyledSubHeader>
         A library for animated texts built with React and CSS Animation.
         <LinkGroupContainer>
-          <StyledLink to="/react-easy-animations/example" color="#0d47a1" margin="0px 30px">More Examples</StyledLink>
-          <ExternalLink href="https://github.com/prismosoft/react-easy-animations/blob/master/README.md" target="_blank" color="#0d47a1">Document</ExternalLink>
+          <StyledLink to="/react-easy-animations/example" color="#ffffff" margin="0px 30px">More Examples</StyledLink>
+          <ExternalLink href="https://github.com/prismosoft/react-easy-animations/blob/master/README.md" target="_blank" color="#ffffff">Docs</ExternalLink>
         </LinkGroupContainer>
       </StyledSubHeader>
       <InstallInfoBar>
@@ -64,7 +64,7 @@ const StyledH1 = styled.h1`
 const StyledSubHeader = styled.h2`
   font-weight: normal;
   font-size: 1rem;
-  color: ${props => props.theme.colors.secondary};
+  color: ${props => props.theme.colors.white};
 `
 const LinkGroupContainer = styled.div`
   display: inline;
@@ -74,7 +74,7 @@ const LinkGroupContainer = styled.div`
 const InstallInfoBar = styled.div`
   width: 100%;
   margin: 5px 0;
-  color: ${props => props.theme.colors.black};
+  color: ${props => props.theme.colors.white};
   background-color: ${props => props.theme.colors.secondary};
   border-radius: 0;
   font-size: 1rem;
