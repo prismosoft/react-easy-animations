@@ -15,7 +15,7 @@ const Footer = () => {
         style={{margin: "0px 10px", color:"orange"}}>
         ❤
       </Animation>
-       by <ExternalLink href="https://prismosoft.com" target="_blank" margin="0px 10px" color="#2196f3" >Prismosoft</ExternalLink> using React and styled-components
+       by <ExternalLink href="https://prismosoft.com" target="_blank" margin="0px 10px" color="#2196f3" >PrismoSoft</ExternalLink> using React and styled-components
     </FooterContainer>
   )
 }
