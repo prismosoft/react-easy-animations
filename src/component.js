@@ -2,7 +2,7 @@ import React from "react"
 import styled, { keyframes } from "styled-components"
 import Typer from "./typer"
 
-const MovingComponent = ({children, type = null, ...props}) => {
+const AnimationComponent = ({children, type = null, ...props}) => {
   return (
     type === "typewriter"
     ? <Typer heading={props.heading} dataText={props.dataText} cursorColor={props.cursorColor} />
@@ -698,6 +698,6 @@ const StlyedElement = styled.div`
   animation-fill-mode: ${props => props.fillMode || 'forwards'};
 `
 
-export default MovingComponent
+export default AnimationComponent
 
 
