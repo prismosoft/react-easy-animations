@@ -215,6 +215,7 @@ const FormContainer = styled.div`
   min-width: 300px;
   height: calc(100vh - 230px);
   z-index: 10;
+  padding: 25px 0;
 `
 const StyledForm = styled.form`
   position: relative;
