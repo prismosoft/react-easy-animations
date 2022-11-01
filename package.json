@@ -1,7 +1,7 @@
 {
   "name": "react-easy-animations",
   "homepage": "https://github.com/prismosoft/react-easy-animations",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "",
   "main": "build/index.js",
   "scripts": {
