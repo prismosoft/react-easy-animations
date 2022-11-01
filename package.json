@@ -27,5 +27,9 @@
   },
   "peerDependencies": {
     "styled-components": ">= 4"
-  }
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "repository": "github:prismosoft/react-easy-animations"
 }
