@@ -1,21 +1,21 @@
 import React from 'react'
 import styled from 'styled-components'
-import MovingComponent from 'react-moving-text'
+import Animation from 'react-css-animations'
 import ExternalLink from '../atoms/externalLink'
 
 const Footer = () => {
   return (
     <FooterContainer>
       Made with
-      <MovingComponent
+      <Animation
         type="flipHorizontal"
         iteration="infinite"
         duration="2000ms"
         timing="linear"
         style={{margin: "0px 10px", color:"orange"}}>
         ❤
-      </MovingComponent>
-       by <ExternalLink href="https://github.com/YiDaoJ" target="_blank" margin="0px 10px" color="#2196f3" >YiDaoJ</ExternalLink> using React and styled-components
+      </Animation>
+       by <ExternalLink href="https://prismosoft.com" target="_blank" margin="0px 10px" color="#2196f3" >YiDaoJ</ExternalLink> using React and styled-components
     </FooterContainer>
   )
 }
