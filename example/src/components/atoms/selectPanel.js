@@ -46,7 +46,7 @@ const SelectPanel = ({ items, onSelectItem }) => {
 
           {!!allItemsWithCheckState &&
             allItemsWithCheckState.map((item, index) => (
-              <ItemContainer as={motion.div} animate={{flip: {
+              <motion.div animate={{flip: {
                   transition: {
                     duration: 300,
                     ease: 'easeInOut'
@@ -59,7 +59,7 @@ const SelectPanel = ({ items, onSelectItem }) => {
                   value={item.value}
                   onChangeCheckState={() => handleChangeCheckState(item.value, allItemsWithCheckState)}
                 />
-              </ItemContainer>
+              </motion.div>
             ))}
 
       </ItemsContainer>
@@ -83,8 +83,6 @@ const ItemsContainer = styled.div`
   flex-wrap: wrap;
   justify-content: flex-start;
 `
-
-const ItemContainer = styled.div
 
 export default SelectPanel
 
