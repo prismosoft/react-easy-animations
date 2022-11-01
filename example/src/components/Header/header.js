@@ -6,7 +6,7 @@ import ExternalLink from '../atoms/externalLink'
 const Header = () => {
   return (
     <NavBar>
-      <ForkRibbon href="https://github.com/prismosoft/react-css-animations" target="_blank">
+      <ForkRibbon href="https://github.com/prismosoft/react-advanced-animations" target="_blank">
         <img
           width="149"
           height="149"
@@ -17,15 +17,15 @@ const Header = () => {
         />
       </ForkRibbon>
       <StyledH1>
-        <StyledLink color="#1976d2" noTransition={true} to="/react-css-animations/">
+        <StyledLink color="#1976d2" noTransition={true} to="/react-advanced-animations/">
           React-Moving-Text
         </StyledLink>
       </StyledH1>
       <StyledSubHeader>
         A library for animated texts built with React and CSS Animation.
         <LinkGroupContainer>
-          <StyledLink to="/react-css-animations/example" color="#0d47a1" margin="0px 30px">More Examples</StyledLink>
-          <ExternalLink href="https://github.com/prismosoft/react-css-animations/blob/master/README.md" target="_blank" color="#0d47a1">Document</ExternalLink>
+          <StyledLink to="/react-advanced-animations/example" color="#0d47a1" margin="0px 30px">More Examples</StyledLink>
+          <ExternalLink href="https://github.com/prismosoft/react-advanced-animations/blob/master/README.md" target="_blank" color="#0d47a1">Document</ExternalLink>
         </LinkGroupContainer>
       </StyledSubHeader>
       <InstallInfoBar>

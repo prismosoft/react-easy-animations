@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import Animation from 'react-css-animations'
+import Animation from 'react-advanced-animations'
 import ExternalLink from '../atoms/externalLink'
 
 const Footer = () => {

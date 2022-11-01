@@ -1,26 +1,26 @@
-# React CSS Animations
+# React Advanced Animations
 
 React Component to show animated text and objects, built with [styled-components](https://www.styled-components.com/).
 
 The Component provides regular animation for common object and some animation effects especially for typography like letters and multi-line text.
 
-**View [Demo and Playground](https://prismosoft.github.io/react-css-animations/)**
+**View [Demo and Playground](https://prismosoft.github.io/react-advanced-animations/)**
 
 ## Installation
 
 Install via npm:
 
 ```
-npm i react-css-animations
+npm i react-advanced-animations
 ```
 
  ## Usage
 
-To use react-css-animations in your react project, wrap the content with the `Animation` component and customize the animation with relevant properties.
+To use react-advanced-animations in your react project, wrap the content with the `Animation` component and customize the animation with relevant properties.
 
 ```jsx
 import React from 'react'
-import Animation from 'react-css-animations'
+import Animation from 'react-advanced-animations'
 
 const MyAnimatedTypo = () => {
   return (
@@ -91,7 +91,7 @@ An string-arry of animation names is used to wrap the animations you want to cha
 
 ```jsx
 import React, { useState } from 'react'
-import Animation from 'react-css-animations'
+import Animation from 'react-advanced-animations'
 
 const AnimationsForChaining = ["swing", "flipSlowDown", "fadeOutToBottom", "jelly"]
 

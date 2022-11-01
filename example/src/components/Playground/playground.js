@@ -1,28 +1,16 @@
 import React from 'react'
-import AnimationComponent from 'react-css-animations'
+import AnimationComponent, { TimingFunctionItems, DirectionItems, FillModeItems, AnimationTypes } from 'react-advanced-animations'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faRedo, faCode } from '@fortawesome/free-solid-svg-icons'
 import styled from 'styled-components'
 import Select from '../atoms/selectMenu'
 import RoundButton from '../atoms/roundButton'
-import Modal from '../atoms/modal'
 import RangeController from '../atoms/rangeController'
 import Checkbox from '../atoms/checkbox'
 import CodeContainer from '../atoms/codeContainer'
-import CheckboxButton from '../atoms/checkboxButton'
-import SelectPanel from '../atoms/selectPanel'
-import { TimingFunctionItems, DirectionItems, FillModeItems, AnimationTypes } from './static'
 
-const Text = "React-CSS-Animations"
+const Text = "react-advanced-animations"
 const Letters = Text.split("")
-const AnimationOptions = {
-  duration: "",
-  delay: "",
-  iteration: "",
-  timingFunction: "ease",
-  direction: "normal",
-  fillMode: "none"
-}
 
 const Playground = () => {
 
