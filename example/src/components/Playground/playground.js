@@ -1,5 +1,5 @@
 import React from 'react'
-import AnimationComponent, { TimingFunctionItems, DirectionItems, FillModeItems, AnimationTypes } from 'react-advanced-animations'
+import AnimationComponent, { TimingFunctionItems, DirectionItems, FillModeItems, AnimationTypes } from 'react-easy-animations'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faRedo, faCode } from '@fortawesome/free-solid-svg-icons'
 import styled from 'styled-components'
@@ -9,7 +9,7 @@ import RangeController from '../atoms/rangeController'
 import Checkbox from '../atoms/checkbox'
 import CodeContainer from '../atoms/codeContainer'
 
-const Text = "react-advanced-animations"
+const Text = "react-easy-animations"
 const Letters = Text.split("")
 
 const Playground = () => {

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
-import Animation from 'react-advanced-animations'
+import Animation from 'react-easy-animations'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlay, faCode } from '@fortawesome/free-solid-svg-icons'
 import SelectPanel from '../atoms/selectPanel'

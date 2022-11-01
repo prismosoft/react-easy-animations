@@ -1,6 +1,6 @@
 {
-  "name": "react-advanced-animations-demo",
-  "homepage": "https://prismosoft.github.io/react-advanced-animations",
+  "name": "react-easy-animations-demo",
+  "homepage": "https://prismosoft.github.io/react-easy-animations",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -18,7 +18,7 @@
     "prismjs": "^1.19.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-advanced-animations": "1.0.0",
+    "react-easy-animations": "1.0.0",
     "react-pose": "^4.0.10",
     "react-router-dom": "^5.1.2",
     "styled-components": "^4.4.1",
