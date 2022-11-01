@@ -2,10 +2,14 @@
     "compilerOptions": {
         "outDir": "./build/",
         "noImplicitAny": true,
-        "module": "es6",
+        "module": "commonjs",
         "target": "es5",
         "jsx": "react",
         "allowJs": true,
-        "moduleResolution": "node"
-    }
+        "declaration": true,
+        "moduleResolution": "node",
+        "strict": true
+    },
+    "include": ["src"],
+    "exclude": ["node_modules", "**/__tests__/*"]
 }

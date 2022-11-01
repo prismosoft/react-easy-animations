@@ -1,6 +1,6 @@
 # React Easy Animations
 
-React Component to show animated text and objects, built with [styled-components](https://www.styled-components.com/).
+React Component to show animated text and objects.
 
 The Component provides regular animation for common object and some animation effects especially for typography like letters and multi-line text.
 
