@@ -1,4 +1,4 @@
-# react-css-animations
+# React CSS Animations
 
 React Component to show animated text and objects, built with [styled-components](https://www.styled-components.com/).
 
