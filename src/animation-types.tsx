@@ -1,4 +1,4 @@
-import {keyframes} from "styled-components";
+import { keyframes } from 'styled-components'
 
 /* ========== basic animations ========== */
 
@@ -91,8 +91,6 @@ const swing = keyframes`
   }
 `
 
-
-
 const fadeIn = keyframes`
   from { opacity: 0; }
   to { opacity: 1; }
@@ -125,7 +123,6 @@ const fadeInFromBottom = keyframes`
   }
   to { opacity: 1 }
 `
-
 
 const fadeOut = keyframes`
   from { opacity: 1; }
@@ -223,7 +220,6 @@ const hangOnRight = keyframes`
   }
 `
 
-
 const squeezeMix = keyframes`
   0% { transform: scale(1, 1); }
   15% { transform: scale(0.95, 0.95); }
@@ -252,7 +248,6 @@ const squeezeVertical = keyframes`
   100% { transform: scaleY(1); }
 `
 
-
 const shakeMix = keyframes`
   0% { transform: translate(2px, 1px) rotate(0deg); }
   10% { transform: translate(-1px, -2px) rotate(-1deg); }
@@ -276,7 +271,6 @@ const shakeVertical = keyframes`
   10%, 15%, 24%, 33%, 42%, 51%, 60%, 69%, 78%, 87%, 96% { transform: translateY(2px) }
   15%, 18%, 27%, 36%, 45%, 54%, 63%, 72%, 81%, 90%, 99% { transform: translateY(-4px) }
 `
-
 
 const flip = keyframes`
   0% {
@@ -535,7 +529,6 @@ const unfold = keyframes`
   100% { transform: scale3d(1, 1, 1); }
 `
 
-
 const zoomIn = keyframes`
   from { transform: scale(2); }
   to { transform: scale(1); }
@@ -574,7 +567,6 @@ const rotateSlowDown = keyframes`
   65%, 100% { transform: rotateZ(5turn); }
 `
 
-
 const popIn = keyframes`
   0% {
     transform: scale3d(0, 0, 0);
@@ -603,72 +595,71 @@ const popOut = keyframes`
 const typewriter = keyframes``
 
 export const animationKeyframes: any = {
+  blur,
+  bounce,
+  effect3D,
+  flash,
+  float,
+  glowing,
+  jelly,
+  pulse,
+  shadow,
+  spin,
+  swing,
 
-    blur: blur,
-    bounce: bounce,
-    effect3D: effect3D,
-    flash: flash,
-    float: float,
-    glowing: glowing,
-    jelly: jelly,
-    pulse: pulse,
-    shadow: shadow,
-    spin: spin,
-    swing: swing,
+  fadeIn,
+  fadeInFromLeft,
+  fadeInFromRight,
+  fadeInFromTop,
+  fadeInFromBottom,
+  fadeOut,
+  fadeOutToLeft,
+  fadeOutToRight,
+  fadeOutToTop,
+  fadeOutToBottom,
 
-    fadeIn: fadeIn,
-    fadeInFromLeft: fadeInFromLeft,
-    fadeInFromRight: fadeInFromRight,
-    fadeInFromTop: fadeInFromTop,
-    fadeInFromBottom: fadeInFromBottom,
-    fadeOut: fadeOut,
-    fadeOutToLeft: fadeOutToLeft,
-    fadeOutToRight: fadeOutToRight,
-    fadeOutToTop: fadeOutToTop,
-    fadeOutToBottom: fadeOutToBottom,
+  flip,
+  flipIn,
+  flipOut,
+  flipSlowDown,
+  flipFromTop,
+  flipToTop,
+  flipFromBottom,
+  flipToBottom,
+  flipFromLeftToCenter,
 
-    flip: flip,
-    flipIn: flipIn,
-    flipOut: flipOut,
-    flipSlowDown: flipSlowDown,
-    flipFromTop: flipFromTop,
-    flipToTop: flipToTop,
-    flipFromBottom: flipFromBottom,
-    flipToBottom: flipToBottom,
-    flipFromLeftToCenter: flipFromLeftToCenter,
+  slideInFromLeft,
+  slideInFromRight,
+  slideOutToLeft,
+  slideOutToRight,
+  slideInFromTop,
+  slideInFromBottom,
+  slideOutToTop,
+  slideOutToBottom,
 
-    slideInFromLeft: slideInFromLeft,
-    slideInFromRight: slideInFromRight,
-    slideOutToLeft: slideOutToLeft,
-    slideOutToRight: slideOutToRight,
-    slideInFromTop: slideInFromTop,
-    slideInFromBottom: slideInFromBottom,
-    slideOutToTop: slideOutToTop,
-    slideOutToBottom: slideOutToBottom,
+  fold,
+  unfold,
 
-    fold: fold,
-    unfold: unfold,
+  hangOnLeft,
+  hangOnRight,
 
-    hangOnLeft: hangOnLeft,
-    hangOnRight: hangOnRight,
+  shakeMix,
+  shakeHorizontal,
+  shakeVertical,
 
-    shakeMix: shakeMix,
-    shakeHorizontal: shakeHorizontal,
-    shakeVertical: shakeVertical,
+  squeezeMix,
+  squeezeHorizontal,
+  squeezeVertical,
 
-    squeezeMix: squeezeMix,
-    squeezeHorizontal: squeezeHorizontal,
-    squeezeVertical: squeezeVertical,
+  rotateSlowDown,
+  rotateCW,
+  rotateACW,
 
-    rotateSlowDown: rotateSlowDown,
-    rotateCW: rotateCW,
-    rotateACW: rotateACW,
+  zoomIn,
+  zoomOut,
 
-    zoomIn: zoomIn,
-    zoomOut: zoomOut,
+  popIn,
+  popOut,
 
-    popIn: popIn,
-    popOut: popOut,
-
-    typewriter: typewriter
+  typewriter,
 }

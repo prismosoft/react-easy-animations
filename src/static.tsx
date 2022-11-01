@@ -1,4 +1,4 @@
-import {animationKeyframes} from "./animation-types";
+import { animationKeyframes } from './animation-types'
 
 export const TimingFunctionItems = ['ease', 'linear', 'ease-in', 'ease-out', 'ease-in-out']
 export const DirectionItems = ['normal', 'reverse', 'alternate', 'alternate-reverse']
@@ -8,112 +8,88 @@ export const AnimationTypes = Object.keys(animationKeyframes)
 
 export const AnimationTypesGrouped = [
   {
-    label: "common",
+    label: 'common',
     options: [
-      "blur",
-      "bounce",
-      "effect3D",
-      "flash",
-      "glowing",
-      "jelly",
-      "pulse",
-      "shadow",
-      "spin",
-      "swing"
-    ]
+      'blur',
+      'bounce',
+      'effect3D',
+      'flash',
+      'glowing',
+      'jelly',
+      'pulse',
+      'shadow',
+      'spin',
+      'swing',
+    ],
   },
   {
-    label: "fade",
-    options:[
-      "fadeIn",
-      "fadeInFromLeft",
-      "fadeInFromRight",
-      "fadeInFromTop",
-      "fadeInFromBottom",
-      "fadeOut",
-      "fadeOutToLeft",
-      "fadeOutToRight",
-      "fadeOutToTop",
-      "fadeOutToBottom"
-    ]
-  },
-  {
-    label:"flip",
-    options:[
-      "flip",
-      "flipIn",
-      "flipOut",
-      "flipSlowDown",
-      "flipFromTop",
-      "flipToTop",
-      "flipFromBottom",
-      "flipToBottom",
-      "flipFromLeftToCenter"
-    ]
-  },
-  {
-    label: "slide",
+    label: 'fade',
     options: [
-      "slideInFromLeft",
-      "slideInFromRight",
-      "slideOutToLeft",
-      "slideOutToRight",
-      "slideInFromTop",
-      "slideInFromBottom",
-      "slideOutToTop",
-      "slideOutToBottom"
-    ]
+      'fadeIn',
+      'fadeInFromLeft',
+      'fadeInFromRight',
+      'fadeInFromTop',
+      'fadeInFromBottom',
+      'fadeOut',
+      'fadeOutToLeft',
+      'fadeOutToRight',
+      'fadeOutToTop',
+      'fadeOutToBottom',
+    ],
   },
   {
-    label: "fold",
+    label: 'flip',
     options: [
-      "fold",
-      "unfold"
-    ]
+      'flip',
+      'flipIn',
+      'flipOut',
+      'flipSlowDown',
+      'flipFromTop',
+      'flipToTop',
+      'flipFromBottom',
+      'flipToBottom',
+      'flipFromLeftToCenter',
+    ],
   },
   {
-    label: "hang",
+    label: 'slide',
     options: [
-      "hangOnLeft",
-      "hangOnRight"
-    ]
+      'slideInFromLeft',
+      'slideInFromRight',
+      'slideOutToLeft',
+      'slideOutToRight',
+      'slideInFromTop',
+      'slideInFromBottom',
+      'slideOutToTop',
+      'slideOutToBottom',
+    ],
   },
   {
-    label:"shake",
-    options:[
-      "shakeMix",
-      "shakeHorizontal",
-      "shakeVertical"
-    ]
+    label: 'fold',
+    options: ['fold', 'unfold'],
   },
   {
-    label: "squeeze",
-    options: [
-      "squeezeMix",
-      "squeezeHorizontal",
-      "squeezeVertical"
-    ]
+    label: 'hang',
+    options: ['hangOnLeft', 'hangOnRight'],
   },
   {
-    label:"rotate",
-    options:[
-      "rotateSlowDown",
-      "rotateCW",
-      "rotateACW",
-    ]
+    label: 'shake',
+    options: ['shakeMix', 'shakeHorizontal', 'shakeVertical'],
   },
   {
-    label:"zoom",
-    options:[
-      "zoomIn",
-      "zoomOut"
-    ]
+    label: 'squeeze',
+    options: ['squeezeMix', 'squeezeHorizontal', 'squeezeVertical'],
   },
   {
-    label:"pop",
-    options:[
-      "popIn",
-      "popOut"
-    ]
-  }
+    label: 'rotate',
+    options: ['rotateSlowDown', 'rotateCW', 'rotateACW'],
+  },
+  {
+    label: 'zoom',
+    options: ['zoomIn', 'zoomOut'],
+  },
+  {
+    label: 'pop',
+    options: ['popIn', 'popOut'],
+  },
 ]

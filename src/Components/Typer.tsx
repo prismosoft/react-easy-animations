@@ -1,7 +1,6 @@
-import * as React from 'react'
-import { useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import { keyframes } from 'styled-components'
-import {TyperProps} from "../types";
+import { TyperProps } from '../types'
 
 const blink = keyframes`
   50% {
@@ -23,33 +22,35 @@ const Typer = ({ heading = '', dataText, cursorColor }: TyperProps) => {
   })
 
   const handleType = () => {
+    const i = loopNum % dataText.length
+    const fullText = dataText[i]
 
-    const i = loopNum % dataText.length;
-    const fullText = dataText[i];
-
-    setText(isDeleting ? fullText.substring(0, text.length - 1) : fullText.substring(0, text.length + 1))
+    setText(
+      isDeleting ? fullText.substring(0, text.length - 1) : fullText.substring(0, text.length + 1),
+    )
     setTypingSpeed(isDeleting ? 30 : 150)
 
     if (!isDeleting && text === fullText) {
-
-      setTimeout(() => setIsDeleting(true), 500);
-
+      setTimeout(() => setIsDeleting(true), 500)
     } else if (isDeleting && text === '') {
       setIsDeleting(false)
-      setLoopNum(loopNum+1)
+      setLoopNum(loopNum + 1)
     }
   }
 
   return (
-    <div>{heading}&nbsp;
+    <div>
+      {heading}&nbsp;
       <span>{text}</span>
-      <span style={{
-        marginLeft: '2px',
-        borderLeft: `3px solid ${cursorColor}`,
-        animation: `${blink} .7s steps(1) infinite`
-      }}></span>
+      <span
+        style={{
+          marginLeft: '2px',
+          borderLeft: `3px solid ${cursorColor}`,
+          animation: `${blink.getName()} .7s steps(1) infinite`,
+        }}
+      ></span>
     </div>
-  );
+  )
 }
 
 export default Typer

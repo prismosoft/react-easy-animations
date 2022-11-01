@@ -1,20 +1,20 @@
 interface Props {
-    type: string;
+  type: string
 }
 
 export interface ElementProps extends Props {
-    duration: string;
-    delay: string;
-    direction: string;
-    timing: string;
-    iteration: string;
-    fillMode: string;
+  duration: string
+  delay: string
+  direction: string
+  timing: string
+  iteration: string
+  fillMode: string
 }
 
 export interface TyperProps {
-    heading: string;
-    dataText: string[];
-    cursorColor: string;
+  heading: string
+  dataText: string[]
+  cursorColor: string
 }
 
-export type AllElementType = ElementProps & TyperProps;
+export type AllElementType = ElementProps & TyperProps
