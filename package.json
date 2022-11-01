@@ -1,6 +1,6 @@
 {
   "name": "react-easy-animations",
-  "homepage": "https://github.com/prismosoft/react-easy-animations",
+  "homepage": "https://prismosoft.github.io/react-easy-animations/",
   "version": "0.0.9",
   "description": "",
   "main": "build/index.tsx",
@@ -31,10 +31,6 @@
   "peerDependencies": {
     "styled-components": ">= 4"
   },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
-  },
-  "repository": "github:prismosoft/react-easy-animations",
   "dependencies": {
     "@types/jest": "^29.2.1",
     "@types/node": "^18.11.9",
