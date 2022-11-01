@@ -1,5 +1,4 @@
-import React from "react"
-import AnimationComponent from './component';
+import AnimationComponent from './Components/Component';
 import { AnimationTypes, AnimationTypesGrouped, DirectionItems, FillModeItems, TimingFunctionItems } from './static'
 
 export { AnimationTypes, AnimationTypesGrouped, DirectionItems, FillModeItems, TimingFunctionItems };

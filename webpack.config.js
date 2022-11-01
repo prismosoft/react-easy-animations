@@ -1,30 +1,35 @@
-var path = require("path");
+const path = require('path');
 
 module.exports = {
   mode: "production",
-  entry: "./src/index.js",
-  output: {
-    path: path.resolve("build"),
-    filename: "index.js",
-    libraryTarget: "commonjs2"
+  entry: './src/index.tsx',
+  module: {
+    rules: [
+      {
+        test: /\.tsx?$/,
+        use: 'ts-loader',
+        exclude: /node_modules/,
+      },
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader'],
+      }
+    ],
   },
   externals: {
+    react: "react",
     "styled-components": {
       commonjs: "styled-components",
       commonjs2: "styled-components",
       amd: "styled-components",
     },
   },
-  module: {
-    rules: [
-      { test: /\.js$/, exclude: /node_modules/, loader: "babel-loader" },
-      {
-        test: /\.css$/,
-        use: ['style-loader', 'css-loader'],
-      }
-    ]
+  resolve: {
+    extensions: ['.tsx', '.ts', '.js'],
   },
-  externals: {
-    react: "react"
+  output: {
+    path: path.resolve(__dirname, "build"),
+    filename: "index.js",
+    libraryTarget: "commonjs2"
   }
 };

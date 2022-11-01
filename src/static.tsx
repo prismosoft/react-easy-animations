@@ -1,73 +1,10 @@
+import {animationKeyframes} from "./animation-types";
 
 export const TimingFunctionItems = ['ease', 'linear', 'ease-in', 'ease-out', 'ease-in-out']
 export const DirectionItems = ['normal', 'reverse', 'alternate', 'alternate-reverse']
 export const FillModeItems = ['none', 'forwards', 'backwards', 'both']
 
-export const AnimationTypes = [
-  "blur",
-  "bounce",
-  "effect3D",
-  "flash",
-  "glowing",
-  "jelly",
-  "pulse",
-  "shadow",
-  "spin",
-  "swing",
-
-  "fadeIn",
-  "fadeInFromLeft",
-  "fadeInFromRight",
-  "fadeInFromTop",
-  "fadeInFromBottom",
-  "fadeOut",
-  "fadeOutToLeft",
-  "fadeOutToRight",
-  "fadeOutToTop",
-  "fadeOutToBottom",
-
-  "fold",
-  "unfold",
-
-  "hangOnLeft",
-  "hangOnRight",
-
-  "shakeMix",
-  "shakeHorizontal",
-  "shakeVertical",
-  "squeezeMix",
-  "squeezeHorizontal",
-  "squeezeVertical",
-
-  "flip",
-  "flipIn",
-  "flipOut",
-  "flipSlowDown",
-  "flipFromTop",
-  "flipToTop",
-  "flipFromBottom",
-  "flipToBottom",
-  "flipFromLeftToCenter",
-
-  "popIn",
-  "popOut",
-
-  "slideInFromLeft",
-  "slideInFromRight",
-  "slideOutToLeft",
-  "slideOutToRight",
-  "slideInFromTop",
-  "slideInFromBottom",
-  "slideOutToTop",
-  "slideOutToBottom",
-
-  "rotateSlowDown",
-  "rotateIn",
-  "rotateOut",
-
-  "zoomIn",
-  "zoomOut",
-];
+export const AnimationTypes = Object.keys(animationKeyframes)
 
 export const AnimationTypesGrouped = [
   {
@@ -101,6 +38,33 @@ export const AnimationTypesGrouped = [
     ]
   },
   {
+    label:"flip",
+    options:[
+      "flip",
+      "flipIn",
+      "flipOut",
+      "flipSlowDown",
+      "flipFromTop",
+      "flipToTop",
+      "flipFromBottom",
+      "flipToBottom",
+      "flipFromLeftToCenter"
+    ]
+  },
+  {
+    label: "slide",
+    options: [
+      "slideInFromLeft",
+      "slideInFromRight",
+      "slideOutToLeft",
+      "slideOutToRight",
+      "slideInFromTop",
+      "slideInFromBottom",
+      "slideOutToTop",
+      "slideOutToBottom"
+    ]
+  },
+  {
     label: "fold",
     options: [
       "fold",
@@ -128,33 +92,6 @@ export const AnimationTypesGrouped = [
       "squeezeMix",
       "squeezeHorizontal",
       "squeezeVertical"
-    ]
-  },
-  {
-    label:"flip",
-    options:[
-      "flip",
-      "flipIn",
-      "flipOut",
-      "flipSlowDown",
-      "flipFromTop",
-      "flipToTop",
-      "flipFromBottom",
-      "flipToBottom",
-      "flipFromLeftToCenter"
-    ]
-  },
-  {
-    label: "slide",
-    options: [
-      "slideInFromLeft",
-      "slideInFromRight",
-      "slideOutToLeft",
-      "slideOutToRight",
-      "slideInFromTop",
-      "slideInFromBottom",
-      "slideOutToTop",
-      "slideOutToBottom"
     ]
   },
   {

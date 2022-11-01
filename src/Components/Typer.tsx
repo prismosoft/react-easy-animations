@@ -1,7 +1,15 @@
-import React, { useState, useEffect } from 'react'
-import styled, { keyframes } from 'styled-components'
+import * as React from 'react'
+import { useState, useEffect } from 'react'
+import { keyframes } from 'styled-components'
+import {TyperProps} from "../types";
 
-const Typer = ({ heading = '', dataText, cursorColor }) => {
+const blink = keyframes`
+  50% {
+    border-color: transparent;
+  }
+`
+
+const Typer = ({ heading = '', dataText, cursorColor }: TyperProps) => {
   const [text, setText] = useState('')
   const [isDeleting, setIsDeleting] = useState(false)
   const [loopNum, setLoopNum] = useState(0)
@@ -35,22 +43,13 @@ const Typer = ({ heading = '', dataText, cursorColor }) => {
   return (
     <div>{heading}&nbsp;
       <span>{text}</span>
-      <Cursor cursorColor={cursorColor}></Cursor>
+      <span style={{
+        marginLeft: '2px',
+        borderLeft: `3px solid ${cursorColor}`,
+        animation: `${blink} .7s steps(1) infinite`
+      }}></span>
     </div>
   );
 }
 
-
 export default Typer
-
-const blink = keyframes`
-  50% {
-    border-color: transparent;
-  }
-`
-
-const Cursor = styled.span`
-  margin-left: 2px;
-  border-left: 3px solid ${props => props.cursorColor};
-  animation: ${blink} .7s steps(1) infinite;
-`

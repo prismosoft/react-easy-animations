@@ -1,9 +1,9 @@
 {
   "name": "react-easy-animations",
   "homepage": "https://github.com/prismosoft/react-easy-animations",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "",
-  "main": "build/index.js",
+  "main": "build/index.tsx",
   "scripts": {
     "start": "webpack --watch",
     "build": "webpack",
@@ -14,16 +14,19 @@
   "author": "prismosoft",
   "license": "ISC",
   "devDependencies": {
-    "react": "^18.2.0",
-    "webpack": "^5.74.0",
     "@babel/core": "^7.7.7",
     "@babel/preset-env": "^7.7.7",
     "@babel/preset-react": "^7.7.4",
+    "@types/styled-components": "^5.1.26",
     "babel-loader": "^8.0.6",
     "css-loader": "^3.4.0",
+    "react": "^18.2.0",
     "style-loader": "^1.1.2",
-    "webpack-cli": "^4.10.0",
-    "styled-components": "^5.3.6"
+    "styled-components": "^5.3.6",
+    "ts-loader": "^9.4.1",
+    "typescript": "^4.8.4",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0"
   },
   "peerDependencies": {
     "styled-components": ">= 4"
@@ -31,5 +34,11 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
   },
-  "repository": "github:prismosoft/react-easy-animations"
+  "repository": "github:prismosoft/react-easy-animations",
+  "dependencies": {
+    "@types/jest": "^29.2.1",
+    "@types/node": "^18.11.9",
+    "@types/react": "^18.0.24",
+    "@types/react-dom": "^18.0.8"
+  }
 }

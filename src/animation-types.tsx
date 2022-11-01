@@ -1,15 +1,4 @@
-import React from "react"
-import styled, { keyframes } from "styled-components"
-import Typer from "./typer"
-
-const AnimationComponent = ({children, type = null, ...props}) => {
-  return (
-    type === "typewriter"
-    ? <Typer heading={props.heading} dataText={props.dataText} cursorColor={props.cursorColor} />
-    : <StlyedElement type={type} {...props}>{children}</StlyedElement>
-  )
-}
-
+import {keyframes} from "styled-components";
 
 /* ========== basic animations ========== */
 
@@ -51,7 +40,7 @@ const float = keyframes`
 const glowing = keyframes`
   0% { color: inherit; text-shadow: none; }
   2%, 59%, 64%, 79% { color: #fff; }
-  3%, 59%, 63%, 78% { text-shadow: 0px 0px 60px, 0 0 22px, 0 0 1em inherit, 0 0 0.5em inherit, 0 0 .1em inherit, 0 10px 3px #000; }
+  3%, 59%, 63%, 78% { text-shadow: 0px 0px 60px, 0 0 22px, 0 0 1em, 0 0 0.5em, 0 0 .1em, 0 10px 3px #000; }
   60% { color: inherit; text-shadow: none; }
   75% { color: inherit; text-shadow: none; }
 `
@@ -368,24 +357,24 @@ const flipToTop = keyframes`
 const flipToBottom = keyframes`
   from {
     opacity: 1;
-    transform-origin: 0%, 0%;
+    transform-origin: 0% 0%;
     transform: rotateX(0deg) translateY(0px);
   }
   to {
     opacity: 0;
-    transform-origin: 0%, 0%;
+    transform-origin: 0% 0%;
     transform: rotateX(-90deg) translateY(50px);
   }
 `
 const flipFromTop = keyframes`
   from {
     opacity: 0;
-    transform-origin: 0%, 0%;
+    transform-origin: 0% 0%;
     transform: rotateX(90deg);
   }
   to {
     opacity: 1;
-    transform-origin: 0%, 0%;
+    transform-origin: 0% 0%;
     transform: rotateX(0deg) ;
   }
 `
@@ -613,91 +602,73 @@ const popOut = keyframes`
 
 const typewriter = keyframes``
 
-const types = {
+export const animationKeyframes: any = {
 
-  blur: blur,
-  bounce: bounce,
-  effect3D: effect3D,
-  flash: flash,
-  float: float,
-  glowing: glowing,
-  jelly: jelly,
-  pulse: pulse,
-  shadow: shadow,
-  spin: spin,
-  swing: swing,
+    blur: blur,
+    bounce: bounce,
+    effect3D: effect3D,
+    flash: flash,
+    float: float,
+    glowing: glowing,
+    jelly: jelly,
+    pulse: pulse,
+    shadow: shadow,
+    spin: spin,
+    swing: swing,
 
-  fadeIn: fadeIn,
-  fadeInFromLeft: fadeInFromLeft,
-  fadeInFromRight: fadeInFromRight,
-  fadeInFromTop: fadeInFromTop,
-  fadeInFromBottom: fadeInFromBottom,
+    fadeIn: fadeIn,
+    fadeInFromLeft: fadeInFromLeft,
+    fadeInFromRight: fadeInFromRight,
+    fadeInFromTop: fadeInFromTop,
+    fadeInFromBottom: fadeInFromBottom,
+    fadeOut: fadeOut,
+    fadeOutToLeft: fadeOutToLeft,
+    fadeOutToRight: fadeOutToRight,
+    fadeOutToTop: fadeOutToTop,
+    fadeOutToBottom: fadeOutToBottom,
 
-  fadeOut: fadeOut,
-  fadeOutToLeft: fadeOutToLeft,
-  fadeOutToRight: fadeOutToRight,
-  fadeOutToTop: fadeOutToTop,
-  fadeOutToBottom: fadeOutToBottom,
+    flip: flip,
+    flipIn: flipIn,
+    flipOut: flipOut,
+    flipSlowDown: flipSlowDown,
+    flipFromTop: flipFromTop,
+    flipToTop: flipToTop,
+    flipFromBottom: flipFromBottom,
+    flipToBottom: flipToBottom,
+    flipFromLeftToCenter: flipFromLeftToCenter,
 
-  flip: flip,
-  flipIn: flipIn,
-  flipOut: flipOut,
-  flipSlowDown: flipSlowDown,
-  flipFromTop: flipFromTop,
-  flipToTop: flipToTop,
-  flipFromBottom: flipFromBottom,
-  flipToBottom: flipToBottom,
-  flipFromLeftToCenter: flipFromLeftToCenter,
+    slideInFromLeft: slideInFromLeft,
+    slideInFromRight: slideInFromRight,
+    slideOutToLeft: slideOutToLeft,
+    slideOutToRight: slideOutToRight,
+    slideInFromTop: slideInFromTop,
+    slideInFromBottom: slideInFromBottom,
+    slideOutToTop: slideOutToTop,
+    slideOutToBottom: slideOutToBottom,
 
-  fold: fold,
-  unfold: unfold,
+    fold: fold,
+    unfold: unfold,
 
-  hangOnLeft: hangOnLeft,
-  hangOnRight: hangOnRight,
+    hangOnLeft: hangOnLeft,
+    hangOnRight: hangOnRight,
 
-  rotateSlowDown: rotateSlowDown,
-  rotateCW: rotateCW,
-  rotateACW: rotateACW,
+    shakeMix: shakeMix,
+    shakeHorizontal: shakeHorizontal,
+    shakeVertical: shakeVertical,
 
+    squeezeMix: squeezeMix,
+    squeezeHorizontal: squeezeHorizontal,
+    squeezeVertical: squeezeVertical,
 
-  shakeMix: shakeMix,
-  shakeHorizontal: shakeHorizontal,
-  shakeVertical: shakeVertical,
+    rotateSlowDown: rotateSlowDown,
+    rotateCW: rotateCW,
+    rotateACW: rotateACW,
 
-  squeezeMix: squeezeMix,
-  squeezeHorizontal: squeezeHorizontal,
-  squeezeVertical: squeezeVertical,
+    zoomIn: zoomIn,
+    zoomOut: zoomOut,
 
-  slideInFromLeft: slideInFromLeft,
-  slideInFromRight: slideInFromRight,
-  slideOutToLeft: slideOutToLeft,
-  slideOutToRight: slideOutToRight,
-  slideInFromTop: slideInFromTop,
-  slideInFromBottom: slideInFromBottom,
-  slideOutToTop: slideOutToTop,
-  slideOutToBottom: slideOutToBottom,
+    popIn: popIn,
+    popOut: popOut,
 
-  zoomIn: zoomIn,
-  zoomOut: zoomOut,
-
-  popIn: popIn,
-  popOut: popOut,
-
-  typewriter: typewriter
+    typewriter: typewriter
 }
-
-const StlyedElement = styled.div`
-  margin: 0;
-  padding: 0;
-  animation-name: ${props => types[props.type] || null};
-  animation-duration: ${props => props.duration || '1s'};
-  animation-timing-function: ${props => props.timing || 'ease'};
-  animation-delay: ${props => props.delay || '0s'};
-  animation-iteration-count: ${props => props.iteration || 'infinite'};
-  animation-direction: ${props => props.direction || 'alternate'};
-  animation-fill-mode: ${props => props.fillMode || 'forwards'};
-`
-
-export default AnimationComponent
-
-
