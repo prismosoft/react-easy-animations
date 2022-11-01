@@ -1,7 +1,7 @@
 {
-  "name": "react-moving-text-demo",
-  "homepage": "https://yidaoj.github.io/react-moving-text",
-  "version": "0.0.0",
+  "name": "react-css-animations-demo",
+  "homepage": "https://prismosoft.github.io/react-css-animations",
+  "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
