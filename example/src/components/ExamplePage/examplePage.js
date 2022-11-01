@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
-import MovingComponent from 'react-moving-text'
+import Animation from 'react-css-animations'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlay, faCode } from '@fortawesome/free-solid-svg-icons'
 import SelectPanel from '../atoms/selectPanel'
@@ -152,7 +152,7 @@ const AnimationChain = () => {
       </div>
       <ResultContainer className="resultContainer">
         <ResultField>
-          <MovingComponent
+          <Animation
             onAnimationEnd={handleChainAnimation}
             type={animationType}
             duration="1000ms"
@@ -160,7 +160,7 @@ const AnimationChain = () => {
             fillMode="forwards"
             iteration={1}>
             React-Moving-Text
-          </MovingComponent>
+          </Animation>
         </ResultField>
         <ButtonGroupContainer>
             <RoundButton
