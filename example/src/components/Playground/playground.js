@@ -1,7 +1,7 @@
 import React from 'react'
-import AnimationComponent, { TimingFunctionItems, DirectionItems, FillModeItems, AnimationTypes } from 'react-easy-animations'
+import AnimationComponent, { TimingFunctionItems, DirectionItems, FillModeItems, AnimationTypesGrouped } from 'react-easy-animations'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faRedo, faCode } from '@fortawesome/free-solid-svg-icons'
+import { faRedo } from '@fortawesome/free-solid-svg-icons'
 import styled from 'styled-components'
 import Select from '../atoms/selectMenu'
 import RoundButton from '../atoms/roundButton'
@@ -183,7 +183,7 @@ const Playground = () => {
         <EffectController>
           <Select
             hasOptGroup={animationObject !== 'multiline'}
-            items={animationObject === 'multiline' ? ['typewriter'] : AnimationTypes}
+            items={animationObject === 'multiline' ? ['typewriter'] : AnimationTypesGrouped}
             width="400px"
             height="45px"
             fontSize="1.25rem"

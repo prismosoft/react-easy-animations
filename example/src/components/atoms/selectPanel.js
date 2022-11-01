@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import posed, { PoseGroup } from 'react-pose'
+import { motion } from "framer-motion"
 import CheckboxButton from './checkboxButton'
 
 const SelectPanel = ({ items, onSelectItem }) => {
@@ -17,7 +17,7 @@ const SelectPanel = ({ items, onSelectItem }) => {
   }
 
   const [allItemsWithCheckState, setAllItemsWithCheckState] = React.useState(convertToArrayWithChecked(items))
-  const [selectedItems, setSelectedItems] = React.useState([])
+  const [setSelectedItems] = React.useState([])
 
   const handleChangeCheckState = (itemValue, allItems) => {
     const checkedItems = []
@@ -43,10 +43,15 @@ const SelectPanel = ({ items, onSelectItem }) => {
   return (
     <PanelContainer>
       <ItemsContainer>
-        <PoseGroup>
+
           {!!allItemsWithCheckState &&
             allItemsWithCheckState.map((item, index) => (
-              <ItemContainer key={index}>
+              <ItemContainer as={motion.div} animate={{flip: {
+                  transition: {
+                    duration: 300,
+                    ease: 'easeInOut'
+                  }
+                }}} key={index}>
                 <CheckboxButton
                   key={index}
                   checked={item.checked}
@@ -56,7 +61,7 @@ const SelectPanel = ({ items, onSelectItem }) => {
                 />
               </ItemContainer>
             ))}
-        </PoseGroup>
+
       </ItemsContainer>
     </PanelContainer>
   )
@@ -78,14 +83,8 @@ const ItemsContainer = styled.div`
   flex-wrap: wrap;
   justify-content: flex-start;
 `
-const ItemContainer = posed.div({
-  flip: {
-    transition: {
-      duration: 300,
-      ease: 'easeInOut'
-    }
-  }
-})
+
+const ItemContainer = styled.div
 
 export default SelectPanel
 

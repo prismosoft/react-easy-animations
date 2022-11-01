@@ -18,7 +18,7 @@ const Header = () => {
       </ForkRibbon>
       <StyledH1>
         <StyledLink color="#1976d2" noTransition={true} to="/react-easy-animations/">
-          React-Moving-Text
+          React-Easy-Animations
         </StyledLink>
       </StyledH1>
       <StyledSubHeader>
@@ -29,7 +29,7 @@ const Header = () => {
         </LinkGroupContainer>
       </StyledSubHeader>
       <InstallInfoBar>
-        <code>npm i react-moving-text</code>
+        <code>npm i react-easy-animations</code>
       </InstallInfoBar>
     </NavBar>
   )

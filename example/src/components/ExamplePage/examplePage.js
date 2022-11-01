@@ -1,77 +1,11 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
-import Animation from 'react-easy-animations'
+import Animation, {AnimationTypes} from 'react-easy-animations'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlay, faCode } from '@fortawesome/free-solid-svg-icons'
 import SelectPanel from '../atoms/selectPanel'
 import RoundButton from '../atoms/roundButton'
 import Modal from '../atoms/modal'
-
-const AnimationTypes = [
-  "blur",
-  "bounce",
-  "effect3D",
-  "flash",
-  "glowing",
-  "jelly",
-  "pulse",
-  "shadow",
-  "spin",
-  "swing",
-
-  "fadeIn",
-  "fadeInFromLeft",
-  "fadeInFromRight",
-  "fadeInFromTop",
-  "fadeInFromBottom",
-  "fadeOut",
-  "fadeOutToLeft",
-  "fadeOutToRight",
-  "fadeOutToTop",
-  "fadeOutToBottom",
-
-  "fold",
-  "unfold",
-
-  "hangOnLeft",
-  "hangOnRight",
-
-  "shakeMix",
-  "shakeHorizontal",
-  "shakeVertical",
-  "squeezeMix",
-  "squeezeHorizontal",
-  "squeezeVertical",
-
-  "flip",
-  "flipIn",
-  "flipOut",
-  "flipSlowDown",
-  "flipFromTop",
-  "flipToTop",
-  "flipFromBottom",
-  "flipToBottom",
-  "flipFromLeftToCenter",
-
-  "popIn",
-  "popOut",
-
-  "slideInFromLeft",
-  "slideInFromRight",
-  "slideOutToLeft",
-  "slideOutToRight",
-  "slideInFromTop",
-  "slideInFromBottom",
-  "slideOutToTop",
-  "slideOutToBottom",
-
-  "rotateSlowDown",
-  "rotateIn",
-  "rotateOut",
-
-  "zoomIn",
-  "zoomOut",
-]
 
 const ExamplePage = ({}) => {
 
@@ -91,7 +25,7 @@ const ExamplePage = ({}) => {
 
     return `
 import React, { useState } from 'react'
-import MovingComponent from 'react-moving-text'
+import Animation from 'react-easy-animations'
 
 const AnimationsForChaining = [${itemsText}]
 
@@ -106,15 +40,15 @@ const AnimationChain = () => {
   }
 
   return (
-    <MovingComponent
+    <Animation
       onAnimationEnd={handleChainAnimation}
       type={animationType}
       duration="1000ms"
       timing="linear"
       fillMode="forwards"
       iteration={1}>
-      React-Moving-Text
-    </MovingComponent>
+      React-Easy-Animations
+    </Animation>
   )
 }
 `
@@ -159,7 +93,7 @@ const AnimationChain = () => {
             timing="linear"
             fillMode="forwards"
             iteration={1}>
-            React-Moving-Text
+            React-Easy-Animations
           </Animation>
         </ResultField>
         <ButtonGroupContainer>

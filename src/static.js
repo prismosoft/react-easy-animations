@@ -4,6 +4,72 @@ export const DirectionItems = ['normal', 'reverse', 'alternate', 'alternate-reve
 export const FillModeItems = ['none', 'forwards', 'backwards', 'both']
 
 export const AnimationTypes = [
+  "blur",
+  "bounce",
+  "effect3D",
+  "flash",
+  "glowing",
+  "jelly",
+  "pulse",
+  "shadow",
+  "spin",
+  "swing",
+
+  "fadeIn",
+  "fadeInFromLeft",
+  "fadeInFromRight",
+  "fadeInFromTop",
+  "fadeInFromBottom",
+  "fadeOut",
+  "fadeOutToLeft",
+  "fadeOutToRight",
+  "fadeOutToTop",
+  "fadeOutToBottom",
+
+  "fold",
+  "unfold",
+
+  "hangOnLeft",
+  "hangOnRight",
+
+  "shakeMix",
+  "shakeHorizontal",
+  "shakeVertical",
+  "squeezeMix",
+  "squeezeHorizontal",
+  "squeezeVertical",
+
+  "flip",
+  "flipIn",
+  "flipOut",
+  "flipSlowDown",
+  "flipFromTop",
+  "flipToTop",
+  "flipFromBottom",
+  "flipToBottom",
+  "flipFromLeftToCenter",
+
+  "popIn",
+  "popOut",
+
+  "slideInFromLeft",
+  "slideInFromRight",
+  "slideOutToLeft",
+  "slideOutToRight",
+  "slideInFromTop",
+  "slideInFromBottom",
+  "slideOutToTop",
+  "slideOutToBottom",
+
+  "rotateSlowDown",
+  "rotateIn",
+  "rotateOut",
+
+  "zoomIn",
+  "zoomOut",
+];
+
+export const AnimationTypesGrouped = [
   {
     label: "common",
     options: [
