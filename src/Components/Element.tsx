@@ -1,5 +1,5 @@
 import React from 'react'
-import { AnimationProps } from "../types";
+import { AnimationProps } from '../types'
 import { animationKeyframes } from '../animation-types'
 import styled from 'styled-components'
 
@@ -15,12 +15,8 @@ const StyledElement = styled.div<AnimationProps>`
   animation-fill-mode: ${(props) => props.fillMode ?? 'forwards'};
 `
 
-const Element = (props) => {
-  return (
-    <StyledElement type={props.type} {...props}>
-      {props.children}
-    </StyledElement>
-  )
+const Element = (props: AnimationProps) => {
+  return <StyledElement {...props}>{props.children}</StyledElement>
 }
 
 export default Element

@@ -1,10 +1,11 @@
-import { DetailedHTMLProps, HTMLAttributes } from 'react'
+import { DetailedHTMLProps, HTMLAttributes, ReactNode } from 'react'
 
 interface Props {
   type: string
 }
 
 export interface AnimationProps extends Props {
+  children: JSX.Element & ReactNode
   duration?: string
   delay?: string
   direction?: string
