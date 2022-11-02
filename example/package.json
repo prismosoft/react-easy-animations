@@ -19,7 +19,7 @@
     "prismjs": "^1.19.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-easy-animations": "~0.1.2",
+    "react-easy-animations": "latest",
     "react-helmet": "^6.1.0",
     "react-router-dom": "^5.1.2",
     "styled-components": "^5.3.6",
