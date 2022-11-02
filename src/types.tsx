@@ -1,4 +1,4 @@
-import { DetailedHTMLProps, HTMLAttributes, ReactNode } from 'react'
+import { ReactNode } from 'react'
 
 interface Props {
   type: string
@@ -14,9 +14,7 @@ export interface AnimationProps extends Props {
   fillMode?: string
 }
 
-export type ElementProps = DetailedHTMLProps<AnimationProps & HTMLAttributes<any>, any>
-
-export interface TyperProps extends DetailedHTMLProps<Props & HTMLAttributes<any>, any> {
+export interface TyperProps extends Props {
   heading?: string
   dataText?: string[]
   cursorColor?: string

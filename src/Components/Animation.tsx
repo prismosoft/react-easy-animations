@@ -1,17 +1,23 @@
-import React from 'react'
-import Typer from './Typer'
-import Element from './Element'
-import { ElementProps, TyperProps } from '../types'
+import React, { PropsWithChildren } from "react";
+import { AnimationProps} from "../types";
+import styled from "styled-components";
+import { animationKeyframes } from "../animation-types";
 
-export const Animation = (props: ElementProps & TyperProps) => {
-  return props.type === 'typewriter' ? (
-    <Typer
-      {...props}
-      heading={props.heading}
-      dataText={props.dataText}
-      cursorColor={props.cursorColor}
-    />
-  ) : (
-    <Element {...props}>{props.children}</Element>
+const StyledElement = styled.div<AnimationProps>`
+  margin: 0;
+  padding: 0;
+  animation-name: ${(props) => animationKeyframes[props.type] ?? null};
+  animation-duration: ${(props) => props.duration ?? '1s'};
+  animation-timing-function: ${(props) => props.timing ?? 'ease'};
+  animation-delay: ${(props) => props.delay ?? '0s'};
+  animation-iteration-count: ${(props) => props.iteration ?? 'infinite'};
+  animation-direction: ${(props) => props.direction ?? 'alternate'};
+  animation-fill-mode: ${(props) => props.fillMode ?? 'forwards'};
+`
+
+export const Animation = ({children, ...props }: PropsWithChildren<AnimationProps>) => {
+
+  return (
+    <StyledElement {...props}>{children}</StyledElement>
   )
 }

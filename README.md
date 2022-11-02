@@ -16,13 +16,13 @@ npm i react-easy-animations
 
  ## Usage
 
-To use react-easy-animations in your react project, wrap the content with the `Animation` component and customize the animation with relevant properties.
+To use react-easy-animations in your react project, wrap the content with the `Animation` or `Typer` components and customize the animation with relevant properties.
 
 ```jsx
 import React from 'react'
-import { Animation } from 'react-easy-animations'
+import { Animation, Typer } from 'react-easy-animations'
 
-const MyAnimatedTypo = () => {
+const MyAnimationComponent = () => {
   return (
     <Animation
       type="animation_type"
@@ -31,9 +31,26 @@ const MyAnimatedTypo = () => {
       direction="normal"
       timing="ease"
       iteration="infinite"
-      fillMode="none">
+      fillMode="none"
+    >
       Content...
     </Animation>
+  )
+}
+
+const MyTyperComponent = () => {
+  
+  return (
+      <Typer
+          heading="React"
+          dataText={[
+            'Easy',
+            'Breezy',
+            'CSS',
+            'Animations'
+          ]}
+          cursorColor="#2196f3"
+      />
   )
 }
 ```

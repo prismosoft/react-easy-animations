@@ -1,19 +1,20 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect } from "react";
 import { keyframes } from 'styled-components'
-import { TyperProps } from '../types'
+import { TyperProps } from "../types";
 
 const blink = keyframes`
   50% {
     border-color: transparent;
   }
 `
+export const Typer = (props: TyperProps) => {
 
-const Typer = ({
-  heading = '',
-  dataText = ['Typewriter Animation'],
-  cursorColor = '#cccccc',
-  ...props
-}: TyperProps) => {
+  const {
+    heading = '',
+    dataText = ['Typewriter Animation'],
+    cursorColor = '#cccccc',
+  } = props;
+
   const [text, setText] = useState('')
   const [isDeleting, setIsDeleting] = useState(false)
   const [loopNum, setLoopNum] = useState(0)
@@ -44,7 +45,7 @@ const Typer = ({
   }
 
   return (
-    <div {...props}>
+    <div>
       {heading}&nbsp;
       <span>{text}</span>
       <span
@@ -57,5 +58,3 @@ const Typer = ({
     </div>
   )
 }
-
-export default Typer

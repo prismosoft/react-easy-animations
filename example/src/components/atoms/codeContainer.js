@@ -47,13 +47,13 @@ const CodeContainer = ({
 
 {
   animationObject === "multiline" &&
-  `<Animation type="typewriter"
-  dataText={[
-  'Sushi',
-  'Pizza',
-  'Brötchen',
-  'Salat'
-]} />`.trim()
+  `<Typer
+    dataText={[
+    'Sushi',
+    'Pizza',
+    'Brötchen',
+    'Salat'
+  ]} />`.trim()
 
 }
 

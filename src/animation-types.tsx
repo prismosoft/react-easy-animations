@@ -592,8 +592,6 @@ const popOut = keyframes`
   }
 `
 
-const typewriter = keyframes``
-
 export const animationKeyframes: any = {
   blur,
   bounce,
@@ -659,7 +657,5 @@ export const animationKeyframes: any = {
   zoomOut,
 
   popIn,
-  popOut,
-
-  typewriter,
+  popOut
 }

@@ -1,5 +1,5 @@
 import React from 'react'
-import {Animation, TimingFunctionItems, DirectionItems, FillModeItems, AnimationTypesGrouped } from 'react-easy-animations'
+import { Animation, Typer, TimingFunctionItems, DirectionItems, FillModeItems, AnimationTypesGrouped } from 'react-easy-animations'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faRedo } from '@fortawesome/free-solid-svg-icons'
 import styled from 'styled-components'
@@ -163,8 +163,7 @@ const Playground = () => {
 
           {
             animationObject === "multiline" &&
-            <Animation
-              type="typewriter"
+            <Typer
               heading="React"
               dataText={[
                 'Easy',
@@ -245,7 +244,7 @@ const ResultField = styled.div`
   background-color: initial;
   font-size: calc(0.6rem + 4vmax);
   font-weight: 100;
-  letter-spacing: -2;
+  letter-spacing: 2px;
   color: ${props => props.theme.colors.primary};
 `
 const LettersContainer = styled.div`
