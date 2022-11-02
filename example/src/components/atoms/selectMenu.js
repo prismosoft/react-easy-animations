@@ -70,7 +70,7 @@ const StyledSelect = styled.select`
 const OptionGroup = styled.optgroup``
 
 const StyledOption = styled.option`
-  display: bloack;
+  display: block;
   color: ${props => props.theme.colors.black};
 `
 

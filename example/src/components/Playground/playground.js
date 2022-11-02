@@ -135,7 +135,7 @@ const Playground = () => {
                 delay={`${delay}s`}
                 direction={direction}
                 timing={timingFunction}
-                iteration={iterationCount}
+                iteration={`${iterationCount}`}
                 fillMode={fillMode}
               >{Text}
               </AnimationComponent>
@@ -152,7 +152,7 @@ const Playground = () => {
                     delay={`${index * interval}ms`}
                     direction={direction}
                     timing={timingFunction}
-                    iteration={iterationCount}
+                    iteration={`${iterationCount}`}
                     fillMode={fillMode}
                     key={index}>
                     {item}
@@ -165,17 +165,16 @@ const Playground = () => {
             animationObject === "multiline" &&
             <AnimationComponent
               type="typewriter"
+              heading="React"
               dataText={[
-                'Sushi',
-                'Pizza',
-                'Brötchen',
-                'Salat'
+                'Easy',
+                'Breezy',
+                'CSS',
+                'Animations'
               ]}
               cursorColor="#2196f3"
             />
           }
-
-
 
         </ResultField>
 

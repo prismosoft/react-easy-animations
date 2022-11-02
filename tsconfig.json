@@ -12,7 +12,7 @@
         "allowSyntheticDefaultImports": true,
         "strictNullChecks": true,
         "declaration": true,
-        "declarationDir": "./"
+        "declarationDir": "./build/"
     },
     "include": ["src"],
     "exclude": ["node_modules", "**/__tests__/*"]

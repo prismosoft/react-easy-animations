@@ -56,7 +56,7 @@ const ForkRibbon = styled.a`
 const StyledH1 = styled.h1`
   font-size: 2.8rem;
   font-weight: 300;
-  letter-spacing: -2;
+  letter-spacing: -2px;
   margin: 0;
   color: ${props => props.theme.colors.middle};
 `

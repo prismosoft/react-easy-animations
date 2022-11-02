@@ -8,7 +8,6 @@ import Playground from './components/Playground/playground';
 import Footer from './components/Footer/footer';
 import ExamplePage from './components/ExamplePage/examplePage';
 
-
 class App extends React.Component {
     render() {
         return (
@@ -47,6 +46,5 @@ class App extends React.Component {
         )
     }
 }
-
 
 export default App

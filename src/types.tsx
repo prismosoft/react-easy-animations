@@ -1,20 +1,24 @@
+import { DetailedHTMLProps, HTMLAttributes } from 'react'
+
 interface Props {
   type: string
 }
 
-export interface ElementProps extends Props {
-  duration: string
-  delay: string
-  direction: string
-  timing: string
-  iteration: string
-  fillMode: string
+export interface AnimationProps extends Props {
+  duration?: string
+  delay?: string
+  direction?: string
+  timing?: string
+  iteration?: string
+  fillMode?: string
 }
 
-export interface TyperProps {
-  heading: string
+export type ElementProps = DetailedHTMLProps<AnimationProps & HTMLAttributes<any>, any>
+
+export interface TyperProps extends DetailedHTMLProps<HTMLAttributes<any>, any> {
+  heading?: string
   dataText: string[]
-  cursorColor: string
+  cursorColor?: string
 }
 
-export type AllElementType = ElementProps & TyperProps
+export type AnyElementType = ElementProps & TyperProps
