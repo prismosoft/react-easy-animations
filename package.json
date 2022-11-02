@@ -10,10 +10,10 @@
     "reveal"
   ],
   "homepage": "https://prismosoft.github.io/react-easy-animations/",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "author": "prismosoft",
   "license": "ISC",
-  "main": "build/index.js",
+  "main": "dist/index.js",
   "scripts": {
     "start": "webpack --watch",
     "build": "webpack",

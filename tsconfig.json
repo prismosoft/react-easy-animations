@@ -1,6 +1,6 @@
 {
     "compilerOptions": {
-        "outDir": "./build/",
+        "outDir": "./dist/",
         "target": "esnext",
         "module": "esnext",
         "moduleResolution": "node",
@@ -12,8 +12,6 @@
         "allowSyntheticDefaultImports": true,
         "strictNullChecks": true,
         "declaration": true,
-        "declarationDir": "./build/"
-    },
-    "include": ["src"],
-    "exclude": ["node_modules", "**/__tests__/*"]
+        "declarationDir": "./dist/"
+    }
 }
