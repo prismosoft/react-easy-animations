@@ -8,7 +8,12 @@ const blink = keyframes`
   }
 `
 
-const Typer = ({ heading = '', dataText = ['Typewriter Animation'], cursorColor = '#cccccc', ...props }: TyperProps) => {
+const Typer = ({
+  heading = '',
+  dataText = ['Typewriter Animation'],
+  cursorColor = '#cccccc',
+  ...props
+}: TyperProps) => {
   const [text, setText] = useState('')
   const [isDeleting, setIsDeleting] = useState(false)
   const [loopNum, setLoopNum] = useState(0)

@@ -17,7 +17,6 @@ module.exports = {
     ],
   },
   externals: {
-    react: "react",
     "styled-components": {
       commonjs: "styled-components",
       commonjs2: "styled-components",

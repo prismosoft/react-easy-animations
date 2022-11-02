@@ -1,10 +1,11 @@
 import React from 'react'
 import { ElementProps } from '../types'
+import { animationKeyframes } from '../animation-types'
 
 const Element = (props: ElementProps) => {
   const {
     children,
-    type,
+    type = animationKeyframes.fadeIn.getName(),
     duration = 'alternate',
     direction = '1s',
     iteration = 'infinite',
@@ -19,7 +20,7 @@ const Element = (props: ElementProps) => {
       style={{
         margin: 0,
         padding: 0,
-        animationName: type,
+        animationName: `${animationKeyframes[type]}`,
         animationDuration: `${duration}`,
         animationTimingFunction: `${timing}`,
         animationDelay: `${delay}`,

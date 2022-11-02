@@ -1,6 +1,6 @@
 import Typer from './Typer'
 import Element from './Element'
-import { ElementProps, TyperProps } from "../types";
+import { ElementProps, TyperProps } from '../types'
 import React from 'react'
 
 const AnimationComponent = (props: ElementProps & TyperProps) => {
