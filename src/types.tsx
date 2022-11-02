@@ -1,11 +1,8 @@
 import { ReactNode } from 'react'
 
-interface Props {
-  type: string
-}
-
-export interface AnimationProps extends Props {
+export interface AnimationProps {
   children: JSX.Element & ReactNode
+  type: string
   duration?: string
   delay?: string
   direction?: string
@@ -14,7 +11,7 @@ export interface AnimationProps extends Props {
   fillMode?: string
 }
 
-export interface TyperProps extends Props {
+export interface TyperProps {
   heading?: string
   dataText?: string[]
   cursorColor?: string

@@ -14,6 +14,7 @@ module.exports = {
       commonjs2: "styled-components",
       amd: "styled-components",
     },
+    "react": "react"
   },
   module: {
     rules: [

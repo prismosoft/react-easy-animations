@@ -8,7 +8,4 @@ export {
   TimingFunctionItems,
 } from './static'
 
-export type {
-  AnimationProps,
-  TyperProps
-} from './types'
+export type { AnimationProps, TyperProps } from './types'

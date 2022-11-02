@@ -657,5 +657,5 @@ export const animationKeyframes: any = {
   zoomOut,
 
   popIn,
-  popOut
+  popOut,
 }

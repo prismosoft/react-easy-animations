@@ -10,23 +10,22 @@
     "reveal"
   ],
   "homepage": "https://prismosoft.github.io/react-easy-animations/",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "author": "prismosoft",
   "license": "ISC",
   "main": "dist/index.js",
   "scripts": {
-    "start": "webpack --watch",
+    "start": "npm run linkall && webpack --watch",
     "build": "webpack",
     "prepare": "npm run build",
     "prepublishOnly": "npm run lint",
     "preversion": "npm run lint",
     "version": "npm run format && git add .",
     "postversion": "git push && git push --tags",
-    "build-page": "cd example && npm install && npm run build",
-    "deploy-page": "npm run build-page && gh-pages -d example/dist",
     "lint": "eslint --no-error-on-unmatched-pattern src/**/*.{ts,tsx,json}",
     "lint:fix": "eslint --no-error-on-unmatched-pattern --fix 'src/**/*.{ts,tsx,json}'",
-    "format": "prettier --write 'src/**/*.{ts,tsx,css,md,json}' --config ./.prettierrc"
+    "format": "prettier --write 'src/**/*.{ts,tsx,css,md,json}' --config ./.prettierrc",
+    "linkall": "npm link react-easy-animations react react-dom"
   },
   "devDependencies": {
     "@babel/core": "^7.7.7",

@@ -1,19 +1,9 @@
-import React, { useState, useEffect } from "react";
-import { keyframes } from 'styled-components'
-import { TyperProps } from "../types";
+import React, { useState, useEffect, HTMLAttributes } from 'react'
+import styled, { keyframes } from 'styled-components'
+import { TyperProps } from '../types'
 
-const blink = keyframes`
-  50% {
-    border-color: transparent;
-  }
-`
-export const Typer = (props: TyperProps) => {
-
-  const {
-    heading = '',
-    dataText = ['Typewriter Animation'],
-    cursorColor = '#cccccc',
-  } = props;
+export const Typer = (props: TyperProps & HTMLAttributes<any>) => {
+  const { heading = '', dataText = ['Typewriter Animation'], cursorColor = '#cccccc' } = props
 
   const [text, setText] = useState('')
   const [isDeleting, setIsDeleting] = useState(false)
@@ -45,16 +35,22 @@ export const Typer = (props: TyperProps) => {
   }
 
   return (
-    <div>
+    <div {...props}>
       {heading}&nbsp;
       <span>{text}</span>
-      <span
-        style={{
-          marginLeft: '2px',
-          borderLeft: `3px solid ${cursorColor}`,
-          animation: `${blink.getName()} .7s steps(1) infinite`,
-        }}
-      ></span>
+      <Cursor cursorColor={cursorColor}></Cursor>
     </div>
   )
 }
+
+const blink = keyframes`
+  50% {
+    border-color: transparent;
+  }
+`
+
+const Cursor = styled.span<TyperProps>`
+  margin-left: 2px;
+  border-left: 3px solid ${(props) => props.cursorColor};
+  animation: ${blink} 0.7s steps(1) infinite;
+`

@@ -1,7 +1,7 @@
-import React, { PropsWithChildren } from "react";
-import { AnimationProps} from "../types";
-import styled from "styled-components";
-import { animationKeyframes } from "../animation-types";
+import React, { HTMLAttributes, PropsWithChildren } from 'react'
+import { AnimationProps } from '../types'
+import styled from 'styled-components'
+import { animationKeyframes } from '../animation-types'
 
 const StyledElement = styled.div<AnimationProps>`
   margin: 0;
@@ -15,9 +15,9 @@ const StyledElement = styled.div<AnimationProps>`
   animation-fill-mode: ${(props) => props.fillMode ?? 'forwards'};
 `
 
-export const Animation = ({children, ...props }: PropsWithChildren<AnimationProps>) => {
-
-  return (
-    <StyledElement {...props}>{children}</StyledElement>
-  )
+export const Animation = ({
+  children,
+  ...props
+}: PropsWithChildren<AnimationProps & HTMLAttributes<any>>) => {
+  return <StyledElement {...props}>{children}</StyledElement>
 }
