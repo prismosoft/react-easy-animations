@@ -10,13 +10,10 @@
     "reveal"
   ],
   "homepage": "https://prismosoft.github.io/react-easy-animations/",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "author": "prismosoft",
   "license": "ISC",
-  "main": "build/index.tsx",
-  "files": [
-    "build/*"
-  ],
+  "main": "build/index.js",
   "scripts": {
     "start": "webpack --watch",
     "build": "webpack",
@@ -25,8 +22,8 @@
     "preversion": "npm run lint",
     "version": "npm run format && git add .",
     "postversion": "git push && git push --tags",
-    "predeploy-page": "cd example && npm install && npm run build",
-    "deploy-page": "npm run predeploy-page && gh-pages -d example/dist",
+    "build-page": "cd example && npm install && npm run build",
+    "deploy-page": "npm run build-page && gh-pages -d example/dist",
     "lint": "eslint --no-error-on-unmatched-pattern src/**/*.{ts,tsx,json}",
     "lint:fix": "eslint --no-error-on-unmatched-pattern --fix 'src/**/*.{ts,tsx,json}'",
     "format": "prettier --write 'src/**/*.{ts,tsx,css,md,json}' --config ./.prettierrc"

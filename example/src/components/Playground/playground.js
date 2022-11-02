@@ -9,7 +9,7 @@ import RangeController from '../atoms/rangeController'
 import Checkbox from '../atoms/checkbox'
 import CodeContainer from '../atoms/codeContainer'
 
-const Text = "react-easy-animations"
+const Text = "React-Easy-Animations"
 const Letters = Text.split("")
 
 const Playground = () => {
