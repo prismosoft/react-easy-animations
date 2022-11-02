@@ -35,7 +35,8 @@
         "react/no-unescaped-entities": ["off"],
         "@typescript-eslint/explicit-function-return-type": ["off"],
         "@typescript-eslint/restrict-template-expressions": ["off"],
-        "@typescript-eslint/strict-boolean-expressions": ["off"]
+        "@typescript-eslint/strict-boolean-expressions": ["off"],
+        "react/no-unknown-property": ["off"]
     },
     "settings": {
         "import/resolver": {

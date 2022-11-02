@@ -1,7 +1,8 @@
-import { DetailedHTMLProps, HTMLAttributes } from 'react'
+import { DetailedHTMLProps, ElementType, HTMLAttributes } from 'react'
 
 interface Props {
   type: string
+  as?: ElementType | keyof JSX.IntrinsicElements
 }
 
 export interface AnimationProps extends Props {
