@@ -9,14 +9,14 @@
     "text",
     "reveal"
   ],
-  "homepage": "https://prismosoft.github.io/react-easy-animations/",
+  "homepage": "https://prismosoft.github.io/react-easy-animations-playground/",
   "version": "0.3.1",
   "author": "prismosoft",
   "license": "ISC",
   "main": "dist/index.js",
   "scripts": {
     "start": "npm run linkall && webpack --watch",
-    "build": "npm run linkall && webpack",
+    "build": "npm run unlinkall && webpack",
     "prepare": "npm run build",
     "prepublishOnly": "npm run lint",
     "preversion": "npm run lint",
