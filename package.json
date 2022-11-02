@@ -10,7 +10,7 @@
     "reveal"
   ],
   "homepage": "https://prismosoft.github.io/react-easy-animations/",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "author": "prismosoft",
   "license": "ISC",
   "main": "build/index.js",
@@ -36,6 +36,7 @@
     "@types/react": "^18.0.24",
     "@types/react-dom": "^18.0.8",
     "@types/styled-components": "^5.1.26",
+    "@types/jest": "^29.2.1",
     "@typescript-eslint/eslint-plugin": "^5.42.0",
     "babel-loader": "^8.0.6",
     "css-loader": "^3.4.0",
@@ -48,7 +49,6 @@
     "eslint-plugin-react": "^7.31.10",
     "eslint-plugin-react-hooks": "^4.6.0",
     "prettier": "^2.7.1",
-    "react": "^18.2.0",
     "style-loader": "^1.1.2",
     "styled-components": "^5.3.6",
     "ts-loader": "^9.4.1",
@@ -60,7 +60,7 @@
     "styled-components": ">= 4"
   },
   "dependencies": {
-    "@types/jest": "^29.2.1"
+    "react": "^18.2.0"
   },
   "repository": "github:prismosoft/react-easy-animations"
 }
