@@ -16,7 +16,7 @@
   "main": "dist/index.js",
   "scripts": {
     "start": "npm run linkall && webpack --watch",
-    "build": "webpack",
+    "build": "npm run linkall && webpack",
     "prepare": "npm run build",
     "prepublishOnly": "npm run lint",
     "preversion": "npm run lint",
@@ -25,7 +25,8 @@
     "lint": "eslint --no-error-on-unmatched-pattern src/**/*.{ts,tsx,json}",
     "lint:fix": "eslint --no-error-on-unmatched-pattern --fix 'src/**/*.{ts,tsx,json}'",
     "format": "prettier --write 'src/**/*.{ts,tsx,css,md,json}' --config ./.prettierrc",
-    "linkall": "npm link react-easy-animations react react-dom"
+    "linkall": "npm link react react-dom",
+    "unlinkall": "npm unlink --no-save react react-dom && npm i react react-dom"
   },
   "devDependencies": {
     "@babel/core": "^7.7.7",
