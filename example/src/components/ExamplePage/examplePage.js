@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
-import Animation, {AnimationTypes} from 'react-easy-animations'
+import {Animation, AnimationTypes} from 'react-easy-animations'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlay, faCode } from '@fortawesome/free-solid-svg-icons'
 import SelectPanel from '../atoms/selectPanel'
@@ -25,7 +25,7 @@ const ExamplePage = ({}) => {
 
     return `
 import React, { useState } from 'react'
-import Animation from 'react-easy-animations'
+import { Animation } from 'react-easy-animations'
 
 const AnimationsForChaining = [${itemsText}]
 

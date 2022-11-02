@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import Animation from 'react-easy-animations'
+import { Animation } from 'react-easy-animations'
 import ExternalLink from '../atoms/externalLink'
 import {theme} from '../../theme'
 

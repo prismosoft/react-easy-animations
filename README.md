@@ -20,7 +20,7 @@ To use react-easy-animations in your react project, wrap the content with the `A
 
 ```jsx
 import React from 'react'
-import Animation from 'react-easy-animations'
+import { Animation } from 'react-easy-animations'
 
 const MyAnimatedTypo = () => {
   return (
@@ -91,7 +91,7 @@ An string-arry of animation names is used to wrap the animations you want to cha
 
 ```jsx
 import React, { useState } from 'react'
-import Animation from 'react-easy-animations'
+import { Animation } from 'react-easy-animations'
 
 const AnimationsForChaining = ["swing", "flipSlowDown", "fadeOutToBottom", "jelly"]
 

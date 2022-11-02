@@ -1,11 +1,8 @@
-import AnimationComponent from './Components/AnimationComponent'
-import {
+export { Animation } from './Components/Animation'
+export {
   AnimationTypes,
   AnimationTypesGrouped,
   DirectionItems,
   FillModeItems,
   TimingFunctionItems,
 } from './static'
-
-export { AnimationTypes, AnimationTypesGrouped, DirectionItems, FillModeItems, TimingFunctionItems }
-export default AnimationComponent

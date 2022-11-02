@@ -1,9 +1,9 @@
+import React from 'react'
 import Typer from './Typer'
 import Element from './Element'
 import { ElementProps, TyperProps } from '../types'
-import React from 'react'
 
-const AnimationComponent = (props: ElementProps & TyperProps) => {
+export const Animation = (props: ElementProps & TyperProps) => {
   return props.type === 'typewriter' ? (
     <Typer
       {...props}
@@ -15,5 +15,3 @@ const AnimationComponent = (props: ElementProps & TyperProps) => {
     <Element {...props}>{props.children}</Element>
   )
 }
-
-export default AnimationComponent

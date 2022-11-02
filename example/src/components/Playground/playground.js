@@ -1,5 +1,5 @@
 import React from 'react'
-import AnimationComponent, { TimingFunctionItems, DirectionItems, FillModeItems, AnimationTypesGrouped } from 'react-easy-animations'
+import {Animation, TimingFunctionItems, DirectionItems, FillModeItems, AnimationTypesGrouped } from 'react-easy-animations'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faRedo } from '@fortawesome/free-solid-svg-icons'
 import styled from 'styled-components'
@@ -128,7 +128,7 @@ const Playground = () => {
         <ResultField>
           {
             animationObject === "object" &&
-              <AnimationComponent
+              <Animation
                 key={counter}
                 type={animationType}
                 duration={`${duration}ms`}
@@ -138,7 +138,7 @@ const Playground = () => {
                 iteration={`${iterationCount}`}
                 fillMode={fillMode}
               >{Text}
-              </AnimationComponent>
+              </Animation>
           }
 
           {
@@ -146,7 +146,7 @@ const Playground = () => {
             <LettersContainer key={counter}>
                 {
                   Letters.map((item, index) =>
-                  <AnimationComponent
+                  <Animation
                     type={animationType}
                     duration={`${duration}ms`}
                     delay={`${index * interval}ms`}
@@ -156,14 +156,14 @@ const Playground = () => {
                     fillMode={fillMode}
                     key={index}>
                     {item}
-                  </AnimationComponent>)
+                  </Animation>)
                 }
               </LettersContainer>
           }
 
           {
             animationObject === "multiline" &&
-            <AnimationComponent
+            <Animation
               type="typewriter"
               heading="React"
               dataText={[
