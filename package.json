@@ -10,7 +10,7 @@
     "reveal"
   ],
   "homepage": "https://prismosoft.github.io/react-easy-animations/",
-  "version": "0.2.9",
+  "version": "0.3.0",
   "author": "prismosoft",
   "license": "ISC",
   "main": "dist/index.js",
@@ -51,14 +51,14 @@
     "prettier": "^2.7.1",
     "react": "^18.2.0",
     "style-loader": "^1.1.2",
-    "styled-components": "^4.4.0",
+    "styled-components": "^5.3.6",
     "ts-loader": "^9.4.1",
     "typescript": "^4.8.4",
     "webpack": "^5.74.0",
     "webpack-cli": "^4.10.0"
   },
   "peerDependencies": {
-    "styled-components": ">= 4"
+    "styled-components": ">= 5"
   },
   "repository": "github:prismosoft/react-easy-animations"
 }
