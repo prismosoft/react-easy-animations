@@ -21,4 +21,4 @@ export interface TyperProps extends DetailedHTMLProps<HTMLAttributes<any>, any> 
   cursorColor?: string
 }
 
-export type AnyElementType = ElementProps & TyperProps
+export type AnyElementType = ElementProps | TyperProps
