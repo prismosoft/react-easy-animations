@@ -3,6 +3,18 @@ const path = require('path');
 module.exports = {
   mode: "production",
   entry: './src/index.tsx',
+  output: {
+    path: path.resolve(__dirname, "dist"),
+    filename: "index.js",
+    libraryTarget: "commonjs2"
+  },
+  externals: {
+    "styled-components": {
+      commonjs: "styled-components",
+      commonjs2: "styled-components",
+      amd: "styled-components",
+    },
+  },
   module: {
     rules: [
       {
@@ -18,9 +30,5 @@ module.exports = {
   },
   resolve: {
     extensions: ['.tsx', '.ts', '.js'],
-  },
-  output: {
-    path: path.resolve(__dirname, "dist"),
-    filename: "index.js"
   }
 };

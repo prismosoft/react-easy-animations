@@ -4,6 +4,7 @@ import Element from './Element'
 import { ElementProps, TyperProps } from '../types'
 
 export const Animation = (props: ElementProps & TyperProps) => {
+
   return props.type === 'typewriter' ? (
     <Typer
       {...props}

@@ -14,7 +14,8 @@ const Footer = () => {
         duration="600ms"
         direction="alternate"
         timing="ease-out"
-        style={{margin: "0px 10px", fontSize: '20px', color: theme.colors.primary}}>
+        style={{margin: "0px 10px", fontSize: '20px', color: theme.colors.primary}}
+      >
         ❤
       </Animation>
        by <ExternalLink href="https://prismosoft.com" target="_blank" margin="0px 10px" color={theme.colors.primary} ><strong>PrismoSoft</strong></ExternalLink> using React and styled-components
