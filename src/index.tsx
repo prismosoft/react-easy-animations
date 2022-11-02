@@ -1,4 +1,4 @@
-import AnimationComponent from './Components/Component'
+import AnimationComponent from './Components/AnimationComponent'
 import {
   AnimationTypes,
   AnimationTypesGrouped,

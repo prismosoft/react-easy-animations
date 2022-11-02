@@ -15,10 +15,8 @@ export interface AnimationProps extends Props {
 
 export type ElementProps = DetailedHTMLProps<AnimationProps & HTMLAttributes<any>, any>
 
-export interface TyperProps extends DetailedHTMLProps<HTMLAttributes<any>, any> {
+export interface TyperProps extends DetailedHTMLProps<Props & HTMLAttributes<any>, any> {
   heading?: string
-  dataText: string[]
+  dataText?: string[]
   cursorColor?: string
 }
-
-export type AnyElementType = ElementProps | TyperProps

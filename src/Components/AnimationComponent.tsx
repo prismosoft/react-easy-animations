@@ -1,9 +1,9 @@
 import Typer from './Typer'
 import Element from './Element'
-import { AnyElementType } from '../types'
+import { ElementProps, TyperProps } from "../types";
 import React from 'react'
 
-const AnimationComponent = (props: AnyElementType) => {
+const AnimationComponent = (props: ElementProps & TyperProps) => {
   return props.type === 'typewriter' ? (
     <Typer
       {...props}
